@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GPC</title>
+
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png" /> 
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" /> 
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,400italic' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="jquery-jvectormap-1.2.2/jquery-jvectormap-1.2.2.css"/>
+	<link href="css/helper.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+	
+	<header class="top-bar">
+		<a class="mobile-nav" href="#"><i class="pe-7s-menu"></i></a>
+		<div class="main-logo"><span class="show-mb">GPC</span><img src="images/gpc_logo.png" class="hide-mb"></div>
+		
+		<ul class="profile">
+			<li>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="return false;" class="profile__user">
+					<figure class="pull-left rounded-image profile__img">
+						<img class="media-object" src="images/thumb0.jpg" alt="user">
+					</figure>
+					<span class="profile__name">
+						Shane <span>Madden</span> <i class="pe-7s-angle-down"></i>
+					</span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="http://www.golfproconnect.co.uk/help_and_support_pros.html" target="_blank"><i class="icon pe-7s-user pe-fw"></i> Account Setup</a></li>
+					<li><a href="profile.html"><i class="icon pe-7s-user pe-fw"></i> Edit Profile</a></li>
+					<li><a href="#"><i class="icon pe-7s-info pe-fw"></i> Account</a></li>
+					<li><a href="#"><i class="icon pe-7s-config pe-fw"></i> Settings</a></li>
+					<li><a href="templates.html"><i class="icon pe-7s-portfolio pe-fw"></i> Templates</a></li>
+					<li><a href="#"><i class="icon pe-7s-close-circle pe-fw"></i> Log Out</a></li>
+				</ul>
+			</li>
+			<li class="profile--higlighted">
+				<span class="badge profile__badge badge--red">122</span>
+				<a class="dropdown-toggle" data-toggle="dropdown" onclick="return false;" href="#">
+					<i class="pe-7f-phone"></i>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="#"><i class="icon pe-7s-phone"></i> You have 122 SMS Credits</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="pe-7f-help1"></i>
+				</a>
+			</li>
+		</ul>
+
+	</header> <!-- /top-bar -->
+
+	<div class="wrapper">
+
+		<aside class="sidebar">
+			<ul class="main-nav">
+				<li>
+					<a class="main-nav__link" href="index.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-home"></i></span>
+						Dashboard
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="schedule.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-date"></i></span>
+						Schedule
+					</a>
+				</li>
+				<li class="main-nav--collapsible">
+					<a class="main-nav__link" href="lessons.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-notebook"></i></span>
+						Lessons
+					</a>
+					<!--<ul class="main-nav__submenu">
+						<li><a href="404.html"><i class="pe-7s-help1"></i><span>Error 404</span></a></li>
+						<li><a href="login.html"><i class="pe-7s-note"></i><span>Login</span></a></li>
+					</ul>-->
+				</li>
+				<li>
+					<a class="main-nav__link" href="clients.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-user"></i></span>
+						Clients
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="videos.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-video"></i></span>
+						Videos
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="services.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-tools"></i></span>
+						Services
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="reports.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-graph1"></i></span>
+						Reports
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="messages.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-comment"></i></span>
+						Messages
+					</a>
+				</li>
+				<li class="main-nav--active">
+					<a class="main-nav__link" href="timeline.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-comment"></i></span>
+						Timeline
+					</a>
+				</li>
+			</ul>
+		</aside> <!-- /main-nav -->
+
+		
+		<section class="content">
+			<header class="main-header clearfix">
+				<h1 class="main-header__title">
+					<i class="icon pe-7s-home"></i>
+					Timeline
+				</h1>
+			</header>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="timeline-month"><span>November</span> <span>2013</span></h4>
+					<ul class="timeline">
+						<li class="timeline-orange">
+							<div class="timeline-icon"><i class="fa fa-camera"></i></div>
+							<div class="timeline-body">
+								<div class="timeline-header">
+									<span class="author">Posted by <a href="#">David Tennant</a></span>
+									<span class="date">Monday, November 11, 2013</span>
+								</div>
+								<div class="timeline-content">
+									<p><img src="images/m_bucklg.jpg" alt="" class="pull-left">Michelle Buckley booked a lesson</p>
+								</div>
+								<div class="timeline-footer">
+								</div>
+							</div>
+						</li>
+						<li class="timeline-warning">
+							<div class="timeline-icon"><i class="fa fa-pencil"></i></div>
+							<div class="timeline-body">
+								<div class="timeline-header">
+									<span class="author">Posted by <a href="#">David Tennant</a></span>
+									<span class="date">Monday, November 21, 2013</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Consectetur Adipisicing Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis, molestiae, deserunt asperiores architecto ut vel repudiandae dolore inventore nesciunt necessitatibus doloribus ratione facere consectetur suscipit!</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-12">
+					<h4 class="timeline-month"><span>December</span> <span>2013</span></h4>
+					<ul class="timeline">
+						<li class="timeline-success">
+							<div class="timeline-icon"><i class="fa fa-camera"></i></div>
+							<div class="timeline-body">
+								<div class="timeline-header">
+									<span class="author">Posted by <a href="#">David Tennant</a></span>
+									<span class="date">Thursday, December 03, 2013</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Lorem Ipsum Dolor Sit Amet</h3>
+									<p><img src="assets/demo/images/thmb_nature_enchantedcreek.jpg" alt="" class="pull-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis, molestiae, deserunt asperiores architecto ut vel repudiandae dolore inventore nesciunt necessitatibus doloribus ratione facere consectetur suscipit! Quasi, officia, veniam mollitia recusandae iure aperiam totam culpa aut nobis eveniet porro laborum quisquam non.</p>
+								</div>
+								<div class="timeline-footer">
+									<a href="#" class="btn btn-default btn-sm pull-left">Read Full Story</a>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-midnightblue">
+							<div class="timeline-icon"><i class="fa fa-pencil"></i></div>
+							<div class="timeline-body">
+								<div class="timeline-header">
+									<span class="author">Posted by <a href="#">David Tennant</a></span>
+									<span class="date">Thursday, December 12, 2013</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Consectetur Adipisicing Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis, molestiae, deserunt asperiores architecto ut vel repudiandae dolore inventore nesciunt necessitatibus doloribus ratione facere consectetur suscipit!</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-12">
+					<h4 class="timeline-month"><span>January</span> <span>2014</span></h4>
+					<ul class="timeline">
+						<li class="timeline-primary">
+							<div class="timeline-icon"><i class="fa fa-camera"></i></div>
+							<div class="timeline-body">
+								<div class="timeline-header">
+									<span class="author">Posted by <a href="#">David Tennant</a></span>
+									<span class="date">Thursday, January 03, 2014</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Lorem Ipsum Dolor Sit Amet</h3>
+									<p><img src="assets/demo/images/thmb_nature_trees.jpg" alt="" class="pull-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis, molestiae, deserunt asperiores architecto ut vel repudiandae dolore inventore nesciunt necessitatibus doloribus ratione facere consectetur suscipit! Quasi, officia, veniam mollitia recusandae iure aperiam totam culpa aut nobis eveniet porro laborum quisquam non.</p>
+								</div>
+								<div class="timeline-footer">
+									<a href="#" class="btn btn-default btn-sm pull-left">Read Full Story</a>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-indigo">
+							<div class="timeline-icon"><i class="fa fa-pencil"></i></div>
+							<div class="timeline-body">
+								<div class="timeline-header">
+									<span class="author">Posted by <a href="#">David Tennant</a></span>
+									<span class="date">Thursday, January 24, 2014</span>
+								</div>
+								<div class="timeline-content">
+									<h3>Consectetur Adipisicing Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, officiis, molestiae, deserunt asperiores architecto ut vel repudiandae dolore inventore nesciunt necessitatibus doloribus ratione facere consectetur suscipit!</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+	</section> <!-- /content -->
+			
+			<footer class="main-footer">
+				<a class="back-top" href="#"><i class="pe-7s-angle-up-circle"></i></a>
+				<p>2014 © GPC.</p>
+			</footer>
+
+		</div> <!-- /wrapper -->
+
+
+		
+		
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="amcharts/amcharts.js"></script>
+		<script type="text/javascript" src="amcharts/serial.js"></script>
+		<script type="text/javascript" src="amcharts/pie.js"></script>
+		<script type="text/javascript" src="js/chart.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script src="jquery-jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js"></script>
+		<script src="jquery-jvectormap-1.2.2/jquery-jvectormap-us-aea-en.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+
+	</body>
+	</html>

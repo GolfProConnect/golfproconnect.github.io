@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GPC</title>
+
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png" /> 
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" /> 
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,400italic' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="jquery-jvectormap-1.2.2/jquery-jvectormap-1.2.2.css"/>
+	<link href="css/helper.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+	
+	<header class="top-bar">
+		<a class="mobile-nav" href="#"><i class="pe-7s-menu"></i></a>
+		<div class="main-logo"><span class="show-mb">GPC</span><img src="images/gpc_logo.png" class="hide-mb"></div>
+		
+		<ul class="profile">
+			<li>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="return false;" class="profile__user">
+					<figure class="pull-left rounded-image profile__img">
+						<img class="media-object" src="images/thumb0.jpg" alt="user">
+					</figure>
+					<span class="profile__name">
+						Shane <span>Madden</span> <i class="pe-7s-angle-down"></i>
+					</span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="http://www.golfproconnect.co.uk/help_and_support_pros.html" target="_blank"><i class="icon pe-7s-user pe-fw"></i> Account Setup</a></li>
+					<li><a href="profile.html"><i class="icon pe-7s-user pe-fw"></i> Edit Profile</a></li>
+					<li><a href="#"><i class="icon pe-7s-info pe-fw"></i> Account</a></li>
+					<li><a href="#"><i class="icon pe-7s-config pe-fw"></i> Settings</a></li>
+					<li><a href="templates.html"><i class="icon pe-7s-portfolio pe-fw"></i> Templates</a></li>
+					<li><a href="#"><i class="icon pe-7s-close-circle pe-fw"></i> Log Out</a></li>
+				</ul>
+			</li>
+			<li class="profile--higlighted">
+				<span class="badge profile__badge badge--red">122</span>
+				<a class="dropdown-toggle" data-toggle="dropdown" onclick="return false;" href="#">
+					<i class="pe-7f-phone"></i>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="#"><i class="icon pe-7s-phone"></i> You have 122 SMS Credits</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="pe-7f-help1"></i>
+				</a>
+			</li>
+		</ul>
+
+	</header> <!-- /top-bar -->
+
+	<div class="wrapper">
+
+		<aside class="sidebar">
+			<ul class="main-nav">
+				<li>
+					<a class="main-nav__link" href="index.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-home"></i></span>
+						Dashboard
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="schedule.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-date"></i></span>
+						Schedule
+					</a>
+				</li>
+				<li class="main-nav--collapsible">
+					<a class="main-nav__link" href="lessons.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-notebook"></i></span>
+						Lessons
+					</a>
+					<!--<ul class="main-nav__submenu">
+						<li><a href="404.html"><i class="pe-7s-help1"></i><span>Error 404</span></a></li>
+						<li><a href="login.html"><i class="pe-7s-note"></i><span>Login</span></a></li>
+					</ul>-->
+				</li>
+				<li>
+					<a class="main-nav__link" href="clients.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-user"></i></span>
+						Clients
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="videos.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-video"></i></span>
+						Videos
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="services.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-tools"></i></span>
+						Services
+					</a>
+				</li>
+				<li class="main-nav--active">
+					<a class="main-nav__link" href="reports.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-graph1"></i></span>
+						Reports
+					</a>
+				</li>
+				<li>
+					<a class="main-nav__link" href="messages.html">
+						<span class="main-nav__icon"><i class="icon pe-7s-comment"></i></span>
+						Messages
+					</a>
+				</li>
+			</ul>
+		</aside> <!-- /main-nav -->
+
+		
+		<section class="content">
+			<header class="main-header clearfix">
+				<h1 class="main-header__title">
+					<i class="icon pe-7s-home"></i>
+					Reports
+				</h1>
+			</header>
+
+			<div class="row">
+
+						<div class="col-md-12">
+
+							<div class="widget">
+
+										<div class="widget__content clearfix">
+
+									<form>
+											
+											<h3>Report Name</h3>
+											<input type="text" class="input-text" placeholder="Report Name"><br/><br/>
+											<div class="input-radio">
+												<h3>Filter as:</h3>
+												<input type="radio" id="radio-1" name="input-radio" class="radio"><label for="radio-1">Appointment Date</label>
+												<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Creation Date</label>
+											</div><br/><br/>
+											<h3>Set Time Period</h3>
+											<div class="col-md-6">
+												<input type="text" class="input-text" placeholder="Report Start Date - dd/mm/yyyy">
+											</div>
+											<div class="col-md-6">
+												<input type="text" class="input-text" placeholder="Report End Date - dd/mm/yyyy">
+											</div><br/><br/><br/><br/>
+
+											<h3>Services & Customers</h3>
+											<div class="col-md-6">
+												<div class="dropdown">
+													<select name="one" class="dropdown-select">
+														<option value="">Select All Services</option>
+														<option value="1">1 hour golf lesson</option>
+														<option value="2">part custom fit</option>
+														<option value="3">Full custom fit</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="dropdown">
+													<select name="one" class="dropdown-select">
+														<option value="">Select All Customers</option>
+														<option value="1">Michelle Buckley</option>
+														<option value="2">Simon Zebo</option>
+														<option value="3">Dougie Howlett</option>
+													</select>
+												</div>
+											</div><br/><br/><br/><br/>
+
+											<div class="col-md-6">
+
+												<h3>Appointment Status</h3>
+											
+												<div class="input-radio">
+													<input type="radio" id="radio-1" name="input-radio" class="radio"><label for="radio-1">Select All</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Booked</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Completed</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Cancelled</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">No Show</label>
+												</div>
+
+											</div>
+
+											<div class="col-md-6">
+
+												<h3>Information Fields</h3>
+
+												<div class="input-radio">
+													<div class="col-md-3">
+													<input type="radio" id="radio-1" name="input-radio" class="radio"><label for="radio-1">Select All</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Customer Name</label>
+													</div>
+													<div class="col-md-3">
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Lesson Date</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Lesson Duration</label>
+													</div>
+													<div class="col-md-3">
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Lesson Cost</label>
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Service Name</label>
+													</div>
+													<div class="col-md-3">
+													<input type="radio" id="radio-2" name="input-radio" class="radio"><label for="radio-2">Staff Member</label>
+													</div>
+												</div>
+
+											</div>
+
+										<button class="btn btn-green pull-right" type="submit">Create Report</button>
+
+									</form>
+
+								</div>
+									
+						        	</div>
+			</div>
+
+
+		</div>
+
+	</div>
+									
+								</div> <!-- /tabs__content 1 -->
+
+							
+								
+							</div> <!-- /tabs__content CONTAINER -->
+
+						</div> <!-- /widget__tabs -->
+
+					</article>
+						
+						</div>
+
+			</div>
+
+
+			
+
+
+			</section> <!-- /content -->
+			
+			<footer class="main-footer">
+				<a class="back-top" href="#"><i class="pe-7s-angle-up-circle"></i></a>
+				<p>2014 © GPC.</p>
+			</footer>
+
+		</div> <!-- /wrapper -->
+
+
+		
+		
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="amcharts/amcharts.js"></script>
+		<script type="text/javascript" src="amcharts/serial.js"></script>
+		<script type="text/javascript" src="amcharts/pie.js"></script>
+		<script type="text/javascript" src="js/chart.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script src="jquery-jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js"></script>
+		<script src="jquery-jvectormap-1.2.2/jquery-jvectormap-us-aea-en.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+
+	</body>
+	</html>
